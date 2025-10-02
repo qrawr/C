@@ -1,5 +1,4 @@
 # Welcome to My C Projects!
-
 Hi there!  
 This repository is a collection of my **C language projects** that I’ve worked on throughout the years.  
 
@@ -11,8 +10,8 @@ This repository is a collection of my **C language projects** that I’ve worked
 
 ## 🎯 Purpose
 This repository is mainly:
-- A **personal archive** of my progress in C programming  
-- A way to **share my work** with visitors like you  
+- A personal archive of my progress in C programming  
+- A way to share my work with visitors like you  
 - A resource for anyone who is also learning C  
 
 ## 🙌 Welcome, Visitor!
@@ -21,4 +20,4 @@ Feel free to:
 - 💡 Suggest improvements or ideas should i learn next!
 
 
-Thanks for stopping by, and :D 
+Thanks for stopping by, and see ya! :D
