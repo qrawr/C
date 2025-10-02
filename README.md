@@ -15,8 +15,6 @@ This repository is mainly:
 - A way to **share my work** with visitors like you  
 - A resource for anyone who is also learning C  
 
-![Coding GIF](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
-
 ## 🙌 Welcome, Visitor!
 Feel free to:
 - ⭐ Star this repo if you find it interesting  
@@ -24,4 +22,3 @@ Feel free to:
 
 
 Thanks for stopping by, and :D 
-![Thank You](https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif)
