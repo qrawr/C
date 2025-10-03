@@ -1,18 +1,15 @@
 #include <stdio.h>
-#define x 10
 
 int getSize();
 void input(int a[x], int NoOfItems);
 int Delete(int a[x], int num, int NoOfItems, int found);
 
 int main(){
-	int a[x];
+	int NoOfItems = getSize();
+	int a[NoOfItems];
 	int num;
-	int NoOfItems;
 	int found = 0;
 	
-	
-	NoOfItems = getSize();
 	input(a, NoOfItems);
 	
 	printf("What number you want to delete? ");
@@ -35,20 +32,16 @@ int main(){
 
 int getSize(){
 	int NoOfItems;
-	
-	printf("Enter a number you want to input (MAX %d): ", x);
+	printf("How many numbers do you want to input? ");
 	scanf("%d", &NoOfItems);
-	
 	return NoOfItems;	
 }
 
 void input(int a[x], int NoOfItems){
-	
 	for (int i = 0; i < NoOfItems; i++){
-		printf("Enter num: ");
+		printf("Input number %d: ", i + 1");
 		scanf("%d", &a[i]);
 	}
-	
 }
 
 int Delete(int a[x], int num, int NoOfItems, int found){
@@ -65,3 +58,4 @@ int Delete(int a[x], int num, int NoOfItems, int found){
 	}while(!found && i <NoOfItems);
 	return found;
 }
+
