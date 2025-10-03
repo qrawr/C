@@ -13,7 +13,7 @@ int main(){
 	inputArray(a, NoOfItems);
 	
 	printf("What number you want to delete? ");
-	scanf("%d", &Delete);
+	scanf("%d", &deleteNum);
 	
 	found = Delete(a, deleteNum, NoOfItems, found);
 	
@@ -58,3 +58,4 @@ int Delete(int a[], int deleteNum, int NoOfItems, int found){
 	}while(!found && i < NoOfItems);
 	return found;
 }
+
