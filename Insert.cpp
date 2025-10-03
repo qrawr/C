@@ -1,16 +1,15 @@
 #include <stdio.h>
-#define t 10
 
 int getSize();
-void input(int a[t], int NoOfItems);
-int insert(int a[t], int NoOfItems, int position, int numToInsert);
+void inputArray(int a[], int NoOfItems);
+int insert(int a[], int NoOfItems, int position, int numToInsert);
 
 int main() {
-    int a[t];
-    int position, numToInsert, NoOfItems;
+    int NoOfItems = getSize();
+    int a[NoOfItems];
+    int position, numToInsert;
 
-    NoOfItems = getSize();
-    input(a, NoOfItems);
+    inputArray(a, NoOfItems);
 
     printf("What number you want to Insert? ");
     scanf("%d", &numToInsert);
@@ -30,20 +29,26 @@ int main() {
 
 int getSize() {
     int NoOfItems;
-    printf("Enter numbers of item you want to input (max %d): ", t);
+    printf("How many numbers do you want to input? ");
     scanf("%d", &NoOfItems);
 
     return NoOfItems;
 }
 
-void input(int a[t], int NoOfItems) {
+void inputArray(int a[], int NoOfItems) {
     for (int i = 0; i < NoOfItems; i++) {    
-        printf("Enter num: ");
+        printf("Enter num %d: ", i + 1);
         scanf("%d", &a[i]);    
     }
 }
 
-int insert(int a[t], int NoOfItems, int position, int numToInsert) {
+int insert(int a[], int NoOfItems, int position, int numToInsert) {
+    
+    if (position < 1 || position > NoOfItems + 1) {
+        printf("Invalid position!\n");
+        return NoOfItems;
+}
+    
     for (int i = NoOfItems - 1; i >= position - 1; i--) {
         a[i + 1] = a[i];
     }
@@ -51,3 +56,4 @@ int insert(int a[t], int NoOfItems, int position, int numToInsert) {
     NoOfItems++;
     return NoOfItems;
 }
+
