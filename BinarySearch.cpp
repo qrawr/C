@@ -51,4 +51,3 @@ int binarySearch(int x, int a[MaxIndex]){
 	}
 	return -1;
 }
-
