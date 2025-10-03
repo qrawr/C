@@ -1,21 +1,21 @@
 #include <stdio.h>
 
 int getSize();
-void input(int a[], int NoOfItems);
-int Delete(int a[], int num, int NoOfItems, int found);
+void inputArray(int a[], int NoOfItems);
+int Delete(int a[], int Delete, int NoOfItems, int found);
 
 int main(){
 	int NoOfItems = getSize();
 	int a[NoOfItems];
-	int num;
+	int Delete;
 	int found = 0;
 	
-	input(a, NoOfItems);
+	inputArray(a, NoOfItems);
 	
 	printf("What number you want to delete? ");
-	scanf("%d", &num);
+	scanf("%d", &Delete);
 	
-	found = Delete(a, num, NoOfItems, found);
+	found = Delete(a, Delete, NoOfItems, found);
 	
 	if (found){
 		--NoOfItems;
@@ -37,7 +37,7 @@ int getSize(){
 	return NoOfItems;	
 }
 
-void input(int a[], int NoOfItems){
+void inputArray(int a[], int NoOfItems){
 	for (int i = 0; i < NoOfItems; i++){
 		printf("Input number %d: ", i + 1");
 		scanf("%d", &a[i]);
@@ -48,16 +48,13 @@ int Delete(int a[], int num, int NoOfItems, int found){
 	int i = 0;
 	
 	do {
-		if (num == a[i]){
+		if (Delete == a[i]){
 			for (int n = i + 1; n < NoOfItems - 1; n++)
 			a[n-1] = a[n];
 			found = 1;
 			NoOfItems--;
 		}
 		i++;
-	}while(!found && i <NoOfItems);
+	}while(!found && i < NoOfItems);
 	return found;
 }
-
-
-
