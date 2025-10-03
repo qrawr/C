@@ -37,14 +37,14 @@ int getSize(){
 	return NoOfItems;	
 }
 
-void input(int a[x], int NoOfItems){
+void input(int a[], int NoOfItems){
 	for (int i = 0; i < NoOfItems; i++){
 		printf("Input number %d: ", i + 1");
 		scanf("%d", &a[i]);
 	}
 }
 
-int Delete(int a[x], int num, int NoOfItems, int found){
+int Delete(int a[], int num, int NoOfItems, int found){
 	int i = 0;
 	
 	do {
@@ -58,5 +58,6 @@ int Delete(int a[x], int num, int NoOfItems, int found){
 	}while(!found && i <NoOfItems);
 	return found;
 }
+
 
 
