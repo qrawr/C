@@ -65,5 +65,3 @@ int Delete(int a[x], int num, int NoOfItems, int found){
 	}while(!found && i <NoOfItems);
 	return found;
 }
-
-
