@@ -51,5 +51,3 @@ int insert(int a[t], int NoOfItems, int position, int numToInsert) {
     NoOfItems++;
     return NoOfItems;
 }
-
-
