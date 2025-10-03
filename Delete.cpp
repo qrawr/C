@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int getSize();
-void input(int a[x], int NoOfItems);
-int Delete(int a[x], int num, int NoOfItems, int found);
+void input(int a[], int NoOfItems);
+int Delete(int a[], int num, int NoOfItems, int found);
 
 int main(){
 	int NoOfItems = getSize();
@@ -58,4 +58,5 @@ int Delete(int a[x], int num, int NoOfItems, int found){
 	}while(!found && i <NoOfItems);
 	return found;
 }
+
 
