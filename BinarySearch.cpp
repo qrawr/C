@@ -2,19 +2,19 @@
 
 int getSize();
 void inputArray(int a[], int MaxIndex);
-int binarySearch(int x, int a[], int MaxIndex);
+int binarySearch(int search, int a[], int MaxIndex);
 
 int main() {
     int MaxIndex = getSize();
     int a[MaxIndex];
-    int x;
+    int search;
 
     inputArray(a, MaxIndex);
 
     printf("Enter number you want to search: ");
-    scanf("%d", &x);
+    scanf("%d", &search);
 
-    int result = binarySearch(x, a, MaxIndex);
+    int result = binarySearch(search, a, MaxIndex);
 
     if (result != -1) {
         printf("Number found at index %d\n", result);
@@ -40,17 +40,17 @@ void inputArray(int a[], int MaxIndex) {
     }
 }
 
-int binarySearch(int x, int a[], int MaxIndex) {
+int binarySearch(int search, int a[], int MaxIndex) {
     int k = 0;
     int m = MaxIndex - 1;
     int Midpoint;
 
-    while (k <= m) {
+    while (search <= m) {
         Midpoint = (k + m) / 2;
 
-        if (x == a[Midpoint]) {
+        if (search == a[Midpoint]) {
             return Midpoint;
-        } else if (x > a[Midpoint]) {
+        } else if (search > a[Midpoint]) {
             k = Midpoint + 1;
         } else {
             m = Midpoint - 1;
@@ -58,4 +58,5 @@ int binarySearch(int x, int a[], int MaxIndex) {
     }
     return -1;
 }
+
 
