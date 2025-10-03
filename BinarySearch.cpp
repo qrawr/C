@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-int inputMax();
+int getSize();
 void inputArray(int a[], int MaxIndex);
 int binarySearch(int x, int a[], int MaxIndex);
 
 int main() {
-    int MaxIndex = inputMax();
+    int MaxIndex = getSize();
     int a[MaxIndex];
     int x;
 
@@ -25,7 +25,7 @@ int main() {
     return 0;
 }
 
-int inputMax() {
+int getSize() {
     int MaxIndex;
     printf("How many numbers do you want to input? ");
     scanf("%d", &MaxIndex);
@@ -58,3 +58,4 @@ int binarySearch(int x, int a[], int MaxIndex) {
     }
     return -1;
 }
+
