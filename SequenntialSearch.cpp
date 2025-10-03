@@ -1,19 +1,20 @@
 #include <stdio.h>
-#define MaxIndex 10
 
-void input(int a[MaxIndex]);
-int SequentialSearch(int n, int a[]);
+int getSize();
+void inputArray(int a[], int MaxIndex);
+int SequentialSearch(int n, int a[], int MaxIndex);
 
 int main(){
+	int MaxIndex = getSize();
 	int a[MaxIndex];
 	int n;
 	
-	input(a);
+	inputArray(a, MaxIndex);
 	
 	printf("What number you want to search?: ");
 	scanf("%d", &n);
 	
- 	int result = SequentialSearch(n, a);
+ 	int result = SequentialSearch(n, a, MaxIndex);
  	
     if (result != -1) {
         printf("Number found at index %d.\n", result);
@@ -24,16 +25,21 @@ int main(){
 	return 0;
 }
 
-void input(int a[MaxIndex]){
-	
-for (int i = 0; i < MaxIndex; i++){
-	printf("Enter num: ");
-	scanf("%d", &a[i]);
-}	
-	
+int getSize(){
+	int MaxIndex;
+	printf("How many numbers do you want to input? ");
+	scanf("%d", &MaxIndex);
+	return MaxIndex;
 }
 
-int SequentialSearch(int n, int a[]){
+void inputArray(int a[], int MaxIndex){
+	for (int i = 0; i < MaxIndex; i++){
+		printf("Input number %d: ", i + 1);
+		scanf("%d", &a[i]);
+	}	
+}
+
+int SequentialSearch(int n, int a[], int MaxIndex){
 	int i;
 	
 	for (i = 0; i< MaxIndex; i++){
@@ -42,3 +48,4 @@ int SequentialSearch(int n, int a[]){
 	}
 	return -1;
 }
+
