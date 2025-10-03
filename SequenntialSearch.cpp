@@ -1,9 +1,9 @@
 #include <stdio.h>
 #define MaxIndex 10
 
-
 void input(int a[MaxIndex]);
 int SequentialSearch(int n, int a[]);
+
 int main(){
 	int a[MaxIndex];
 	int n;
@@ -42,5 +42,3 @@ int SequentialSearch(int n, int a[]){
 	}
 	return -1;
 }
-
-
