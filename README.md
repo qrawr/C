@@ -5,7 +5,6 @@ This repository is a collection of my **C language projects** that I’ve worked
 ## 📚 What You’ll Find Here
 - 📝 Small practice programs in C  
 - 📖 Exercises from my learning journey  
-- ⚙️ Simple applications to understand the fundamentals  
 - 🚀 Improvements over time as I get better  
 
 ## 🎯 Purpose
@@ -21,3 +20,5 @@ Feel free to:
 
 
 Thanks for stopping by, and see ya! :D
+
+Join my Community here: https://discord.gg/vMqBsbNbFC
