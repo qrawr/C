@@ -1,0 +1,88 @@
+Problem 1: 
+An electronics company sees a 13% increase in sales from the previous year, making 
+27% more profit than the previous year. Write a program that takes the company’s 
+previous year’s sales and profit as inputs and outputs the increase in sales and profit from 
+the previous year.
+
+Problem 2: 
+You want a fast way to determine the true "per bite" value of a pizza given its price 
+and diameter. For example: Is a 9-inch diameter pizza that costs PHP 319.00 a better 
+buy than 12-inch diameter pizza priced at PHP 499.00? Which one costs less per 
+square inch? 
+You want a program that you could run once for each pizza that you are considering. 
+The program would ask for the necessary data about a pizza and then calculate and 
+display that pizza's value in units of "cents per square inch".
+
+Problem 3: 
+Seconds to Minutes.
+
+Problem 4:
+Write a program that reads in a number, computes the square root and the square of that number 
+and finally outputs all three values: the input number, 
+the square root and the square of the number 
+
+Problem 5:
+Temperature, Celsius to Fahrenheit
+
+Problem 6:
+Write a value-returning function named convertBinaryToDecimal that takes a binary 
+number and returns its decimal equivalent. The decimal equivalent of binary 1101 is 13. 
+Embed the function in a program. 
+
+Problem 7:
+Write a value-returning function named getFibonacciNumber that takes a positive 
+integer (say n) and returns the nth Fibonacci number. By definition, the first two numbers 
+in the Fibonacci sequence are 0 and 1, and each subsequent number is the sum of the 
+previous two. So, if the input is 10, the output is 34. Embed the function in a program.
+
+Problem 8:
+Write a program that mimics a calculator. The program should take as input two integers 
+and the operation to be performed. It should then output the numbers, the operator, and 
+the result. (For division, if the denominator is zero, output an appropriate message.). 
+Some sample output follows: 
+Sample Output #1: 
+Input an integer, an operator, and another integer: 3 + 4 
+3 + 4 = 7 
+Sample Output #2: 
+Input an integer, an operator, and another integer: 12 / 5 
+12 / 5 = 2.4
+
+Problem 9: 
+Write a program that reads in a whole number and outputs a statement telling whether or 
+not the number is evenly divisible by three. If the number is not divisible by three, then 
+the program should also output the remainder obtained when the number is divided by 
+three. 
+Sample Output #1: 
+Input a positive integer: 18 
+18 is evenly divisible by three 
+Sample Output #2: 
+Input a positive integer: 29 
+29 is not evenly divisible by three 
+Remainder = 2
+
+Problem 10:
+Write a program that reads in three distinct integers and outputs the largest number. 
+
+Problem 11:
+Real estate
+
+Problem 12:
+Vending Machine
+
+Problem 13:
+Student Grade
+
+Problem 14:
+Calculator
+
+Problem 15:
+Phone bill
+
+Problem 16:
+Write a program that inputs 10 integers into an array, asks for a number to be searched 
+in the array, and returns the frequency of that number. The program should have two 
+user-defined functions: (1) a void function that inputs data into the array, and (2) a function 
+that returns the frequency of the number being searched.
+
+Problem 17:
+ugh!
