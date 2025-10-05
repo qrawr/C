@@ -85,4 +85,6 @@ user-defined functions: (1) a void function that inputs data into the array, and
 that returns the frequency of the number being searched.
 
 Problem 17:
-ugh!
+
+Problem 18: 
+
